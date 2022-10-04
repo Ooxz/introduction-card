@@ -131,16 +131,10 @@ header {
     color: #fff;
 }
 
-@media (min-width: 600px) {
-    html {
-        /* font-size: 1.3125rem; */
-    }
-}
 
 @media (min-width: 750px) {
     .splitter {
         display: flex;
-        align-items: center;
     }
    
     .articles.inverse {
@@ -172,6 +166,33 @@ header {
     
     .articles.inverse h2 {
         border-color: currentColor;
+    }
+    .portfolio {
+        background-color: #252525;
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .portfolio .container {
+        max-width: 1200px;
+    }
+
+    .work {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .portfolio-item {
+        width: 28%;
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        height: 15em;
+        object-fit: cover;
     }
 }
 
